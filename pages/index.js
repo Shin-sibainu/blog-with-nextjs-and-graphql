@@ -55,18 +55,20 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <div className={styles.title}>
-          <h2>Tech Blog With Next.js</h2>
+          <h2>Next.jsとGraphQLブログ</h2>
         </div>
-        {posts.map((post) => (
-          <BlogCard
-            title={post.title}
-            author={post.author}
-            photo={post.photo}
-            date={post.date}
-            slug={post.slug}
-            key={post.id}
-          />
-        ))}
+        <div className={styles.gridWrapper}>
+          {posts.map((post) => (
+            <BlogCard
+              title={post.title}
+              author={post.author}
+              photo={post.photo}
+              date={post.date}
+              slug={post.slug}
+              key={post.id}
+            />
+          ))}
+        </div>
       </main>
     </div>
   );

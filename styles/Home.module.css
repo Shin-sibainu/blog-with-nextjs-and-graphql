@@ -1,5 +1,4 @@
 .main {
-  min-height: 100vh;
   padding: 2rem 0;
   flex: 1;
   display: flex;
@@ -10,4 +9,10 @@
 
 .title {
   font-size: 1.8rem;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 90px;
 }

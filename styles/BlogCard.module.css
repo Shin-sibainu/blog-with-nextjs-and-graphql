@@ -4,6 +4,12 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 15px 20px 40px rgba(96, 83, 83, 0.4);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 
 .text {
