@@ -1,0 +1,41 @@
+1. graphcms setup
+
+2. create Model 
+-> Post
+
+3. add field
+-> single line text -> title -> limit character(5-50)
+-> slug -> slug -> generate slug from template -> {title}
+-> assst picker -> photo 
+-> rich text -> content 
+-> date -> date_published
+
+4. edit Post 
+
+5. create Model
+-> Author
+
+6. add field
+-> single line title -> name -> unique 
+-> assets picker -> avatar
+-> reference -> two-way-ref -> one to many
+
+7. edit Author
+
+8. many post you must create min 2 post?
+
+9. query graphql 
+-> query {
+    posts {
+        title
+        date
+        content {
+            html
+        }
+    }
+}
+
+10. get api key
+
+11. create permission
+-> all read
